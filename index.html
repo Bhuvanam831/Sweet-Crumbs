@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sweet Crumbs – Homemade Cakes & Bakes, Chennai</title>
+<meta name="description" content="Custom cakes, cupcakes and festival hampers baked fresh at home in Chennai. Order on WhatsApp.">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#fff6f0;--card:#fff;--text:#3a2a26;--muted:#7a6660;--pink:#d6457a;--gold:#e0a028;--line:#f0dcd2}
+html{scroll-padding-top:calc(60px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c1413;--card:#271c1a;--text:#f6ebe6;--muted:#bba7a0;--pink:#f06a9b;--gold:#f0b94a;--line:#3a2a27}}
+:root[data-theme="dark"]{--bg:#1c1413;--card:#271c1a;--text:#f6ebe6;--muted:#bba7a0;--pink:#f06a9b;--gold:#f0b94a;--line:#3a2a27}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Poppins,Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.55}
+.wrap{max-width:1040px;margin:0 auto;padding:0 18px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+.logo{font-weight:700;color:var(--pink);font-size:1.15rem}
+nav a{color:var(--text);text-decoration:none;margin-right:14px;font-size:.88rem}
+@media(max-width:640px){nav{display:none}}
+.cartbtn{background:var(--pink);color:#fff;border:0;border-radius:99px;padding:8px 16px;font:inherit;font-weight:600;cursor:pointer}
+.offer{background:linear-gradient(90deg,var(--pink),var(--gold));color:#fff;text-align:center;padding:10px 14px;font-weight:600;font-size:.92rem}
+.hero{padding:40px 0 20px;display:grid;gap:22px;align-items:center}
+@media(min-width:720px){.hero{grid-template-columns:1.2fr 1fr}}
+h1{font-size:clamp(1.9rem,5vw,2.9rem);line-height:1.15;margin:0 0 12px}
+h1 span{color:var(--pink)}
+.sub{color:var(--muted);margin:0 0 20px;max-width:46ch}
+.btn{display:inline-block;background:var(--pink);color:#fff;border:0;border-radius:12px;padding:12px 22px;font:inherit;font-weight:600;text-decoration:none;cursor:pointer;margin-right:8px}
+.btn.alt{background:transparent;color:var(--pink);border:2px solid var(--pink)}
+.heroimg{font-size:7rem;text-align:center;background:var(--card);border:1px solid var(--line);border-radius:28px;padding:28px}
+section{padding:28px 0}
+h2{font-size:1.5rem;margin:0 0 14px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.emoji{font-size:3rem}
+.card h3{margin:6px 0 4px;font-size:1.05rem}
+.card p{margin:0 0 8px;color:var(--muted);font-size:.9rem}
+.tag{font-size:.75rem;background:var(--bg);border:1px solid var(--line);border-radius:99px;padding:2px 10px;color:var(--pink);font-weight:600}
+.row{display:flex;align-items:center;justify-content:space-between;margin-top:10px;gap:8px}
+.price{font-weight:700}
+.add{background:var(--pink);color:#fff;border:0;border-radius:10px;padding:8px 14px;font:inherit;font-weight:600;cursor:pointer}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.filters button{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:99px;padding:6px 14px;font:inherit;cursor:pointer}
+.filters button.on{background:var(--pink);color:#fff;border-color:var(--pink)}
+.offers .card{border:2px dashed var(--gold)}
+.gal{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(130px,1fr))}
+.gal div{aspect-ratio:1;border-radius:16px;display:grid;place-items:center;font-size:3rem;background:linear-gradient(135deg,#ffd9e6,#ffe9c2);color:#000}
+form{display:grid;gap:10px;max-width:560px}
+label{font-size:.85rem;font-weight:600}
+input,select,textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--text);font:inherit}
+.two{display:grid;gap:10px;grid-template-columns:1fr 1fr}
+footer{border-top:1px solid var(--line);padding:24px 0 90px;color:var(--muted);font-size:.88rem}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#25d366;color:#fff;border-radius:99px;padding:12px 18px;font-weight:700;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.25);z-index:6}
+#drawer{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;z-index:10;justify-content:flex-end}
+#drawer.open{display:flex}
+.panel{background:var(--bg);width:min(420px,100%);height:100%;overflow-y:auto;padding:20px;padding-top:calc(20px + env(safe-area-inset-top,0px))}
+.panel h2{display:flex;justify-content:space-between}
+.x{background:none;border:0;font-size:1.6rem;color:var(--text);cursor:pointer}
+.item{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);gap:8px}
+.qty button{width:28px;height:28px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--text);cursor:pointer}
+.qty span{display:inline-block;min-width:24px;text-align:center}
+.total{display:flex;justify-content:space-between;font-weight:700;margin:14px 0 6px}
+.note{font-size:.8rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="offer" id="offerbar"></div>
+<header><div class="wrap">
+  <div class="logo">🎂 Sweet Crumbs</div>
+  <nav><a href="#menu">Cakes</a><a href="#custom">Custom order</a><a href="#gallery">Gallery</a><a href="#offers">Offers</a></nav>
+  <button class="cartbtn" id="open">Cart (<span id="cnt">0</span>)</button>
+</div></header>
+
+<main class="wrap">
+<div class="hero">
+  <div>
+    <h1>Freshly baked, <span>made with love</span> at home.</h1>
+    <p class="sub">Custom cakes, cupcakes and festival hampers baked to order in Chennai. Choose a cake or design your own, then order on WhatsApp.</p>
+    <a class="btn" href="#menu">See cakes</a><a class="btn alt" href="#custom">Custom cake</a>
+  </div>
+  <div class="heroimg" aria-hidden="true">🍰</div>
+</div>
+
+<section id="menu">
+  <h2>Our cakes and bakes</h2>
+  <div class="filters" id="filters"></div>
+  <div class="grid" id="grid"></div>
+  <p class="note">Prices are for the size shown. Egg and eggless options available, mention it in your order.</p>
+</section>
+
+<section id="custom">
+  <h2>Design your custom cake</h2>
+  <div class="card">
+  <form id="cform">
+    <div class="two">
+      <div><label>Your name</label><input id="cn" required></div>
+      <div><label>Phone</label><input id="cp" type="tel" required></div>
+    </div>
+    <div class="two">
+      <div><label>Flavour</label><select id="cf"><option>Chocolate truffle</option><option>Vanilla</option><option>Red velvet</option><option>Butterscotch</option><option>Black forest</option><option>Pineapple</option></select></div>
+      <div><label>Weight</label><select id="cw"><option>500 g</option><option>1 kg</option><option>1.5 kg</option><option>2 kg</option><option>3 kg</option></select></div>
+    </div>
+    <div class="two">
+      <div><label>Egg / Eggless</label><select id="ce"><option>Eggless</option><option>With egg</option></select></div>
+      <div><label>Shape</label><select id="cs"><option>Round</option><option>Heart</option><option>Square</option><option>Number / letter</option></select></div>
+    </div>
+    <div class="two">
+      <div><label>Delivery date</label><input id="cd" type="date" required></div>
+      <div><label>Budget (₹)</label><input id="cb" type="number" min="0" placeholder="Optional"></div>
+    </div>
+    <div><label>Message on cake</label><input id="cm" placeholder="Happy Birthday Priya!"></div>
+    <div><label>Theme / design ideas</label><textarea id="ct" rows="3" placeholder="Describe the design. You can send a reference photo on WhatsApp."></textarea></div>
+    <div><label>Delivery area</label><input id="ca" placeholder="Area in Chennai"></div>
+    <button type="submit" class="btn">Send custom order on WhatsApp</button>
+    <p class="note">Order at least 2 days before the date. We confirm the price on WhatsApp.</p>
+  </form>
+  </div>
+</section>
+
+<section id="offers" class="offers">
+  <h2>Festival offers</h2>
+  <div class="grid" id="offergrid"></div>
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gal"><div>🎂</div><div>🧁</div><div>🍫</div><div>🍓</div><div>🎁</div><div>🍪</div><div>🥧</div><div>🎉</div></div>
+  <p class="note">Add your real cake photos here. Follow us on Instagram @yourhandle for more.</p>
+</section>
+
+<section>
+  <h2>How to order</h2>
+  <div class="grid">
+    <div class="card"><div class="emoji">1️⃣</div><h3>Choose</h3><p>Pick a cake or fill the custom form.</p></div>
+    <div class="card"><div class="emoji">2️⃣</div><h3>Send on WhatsApp</h3><p>Your order goes as a ready message.</p></div>
+    <div class="card"><div class="emoji">3️⃣</div><h3>Pay advance</h3><p>50% advance by UPI confirms your order.</p></div>
+    <div class="card"><div class="emoji">4️⃣</div><h3>Enjoy</h3><p>Fresh cake delivered on your date.</p></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <p><b>Contact:</b> WhatsApp +91 90000 00000 · Instagram @yourhandle · Chennai</p>
+  <p><b>FSSAI License No:</b> XXXXXXXXXXXXXX</p>
+  <p>© Sweet Crumbs · Privacy · Terms</p>
+</div></footer>
+
+<a class="wa" id="wafloat" href="#" target="_blank" rel="noopener">💬 WhatsApp</a>
+
+<div id="drawer"><div class="panel">
+  <h2>Your cart <button class="x" id="close" aria-label="Close">×</button></h2>
+  <div id="items"></div>
+  <div class="total"><span>Total</span><span id="total">₹0</span></div>
+  <div class="note" id="minnote"></div>
+  <input id="name" placeholder="Your name" style="margin-top:8px">
+  <input id="date" type="date" style="margin-top:8px">
+  <textarea id="addr" rows="2" placeholder="Delivery address (Chennai)" style="margin-top:8px"></textarea>
+  <button class="btn" style="width:100%;margin-top:8px" id="send">Send order on WhatsApp</button>
+</div></div>
+
+<script>
+// ===== EDIT THESE =====
+var WA = "919000000000";
+var MIN_ORDER = 400;
+var OFFER_BAR = "🪔 Diwali Special: Free delivery on orders above ₹1000!";
+var PRODUCTS = [
+  {id:1,c:"Cakes",e:"🍫",n:"Chocolate Truffle Cake",d:"Rich dark chocolate ganache.",w:"500 g",p:550},
+  {id:2,c:"Cakes",e:"❤️",n:"Red Velvet Cake",d:"Cream cheese frosting.",w:"500 g",p:650},
+  {id:3,c:"Cakes",e:"🍍",n:"Pineapple Cake",d:"Fresh cream and pineapple.",w:"500 g",p:480},
+  {id:4,c:"Cupcakes",e:"🧁",n:"Cupcake Box (6)",d:"Assorted flavours.",w:"Box of 6",p:360},
+  {id:5,c:"Cookies",e:"🍪",n:"Choco Chip Cookies",d:"Crunchy outside, soft inside.",w:"250 g",p:280},
+  {id:6,c:"Hampers",e:"🎁",n:"Festival Gift Hamper",d:"Cake slice, cookies, brownies.",w:"1 hamper",p:899}
+];
+var OFFERS = [
+  {e:"🪔",t:"Diwali Hamper",d:"Gift hamper at a special price. Order before the festival rush.",tag:"15% OFF"},
+  {e:"🎄",t:"Christmas Plum Cake",d:"Pre-book plum cakes, delivered fresh.",tag:"Pre-book"},
+  {e:"🎂",t:"Birthday Combo",d:"1 kg cake + 6 cupcakes combo.",tag:"Save ₹200"}
+];
+// ======================
+var cart={}, cat="All";
+var $=function(i){return document.getElementById(i)};
+function inr(n){return "₹"+n}
+$("offerbar").textContent=OFFER_BAR;
+$("offergrid").innerHTML=OFFERS.map(function(o){return '<div class="card"><div class="emoji">'+o.e+'</div><h3>'+o.t+' <span class="tag">'+o.tag+'</span></h3><p>'+o.d+'</p></div>'}).join("");
+function renderFilters(){
+  var cats=["All"].concat(PRODUCTS.map(function(p){return p.c}).filter(function(v,i,a){return a.indexOf(v)===i}));
+  $("filters").innerHTML=cats.map(function(c){return '<button data-c="'+c+'" class="'+(c===cat?"on":"")+'">'+c+'</button>'}).join("");
+}
+function renderProducts(){
+  $("grid").innerHTML=PRODUCTS.filter(function(p){return cat==="All"||p.c===cat}).map(function(p){
+    return '<div class="card"><div class="emoji">'+p.e+'</div><h3>'+p.n+'</h3><p>'+p.d+'</p><span class="tag">'+p.w+'</span><div class="row"><span class="price">'+inr(p.p)+'</span><button class="add" data-id="'+p.id+'">Add to cart</button></div></div>';
+  }).join("");
+}
+$("filters").addEventListener("click",function(e){var c=e.target.getAttribute("data-c"); if(c){cat=c;renderFilters();renderProducts()}});
+function total(){return PRODUCTS.reduce(function(s,p){return s+(cart[p.id]||0)*p.p},0)}
+function count(){return Object.keys(cart).reduce(function(s,k){return s+cart[k]},0)}
+function renderCart(){
+  $("cnt").textContent=count();
+  var h=PRODUCTS.filter(function(p){return cart[p.id]}).map(function(p){
+    return '<div class="item"><div>'+p.n+'<br><span class="note">'+inr(p.p)+' each</span></div><div class="qty"><button data-m="'+p.id+'">−</button><span>'+cart[p.id]+'</span><button data-p="'+p.id+'">+</button></div></div>';
+  }).join("");
+  $("items").innerHTML=h||'<p class="note">Your cart is empty.</p>';
+  $("total").textContent=inr(total());
+  $("minnote").textContent="Minimum order "+inr(MIN_ORDER)+". Delivery charge confirmed on WhatsApp.";
+}
+function change(id,d){cart[id]=(cart[id]||0)+d; if(cart[id]<=0)delete cart[id]; renderCart()}
+$("grid").addEventListener("click",function(e){var id=e.target.getAttribute("data-id"); if(id){change(+id,1); $("drawer").classList.add("open")}});
+$("items").addEventListener("click",function(e){var p=e.target.getAttribute("data-p"),m=e.target.getAttribute("data-m"); if(p)change(+p,1); if(m)change(+m,-1)});
+$("open").onclick=function(){$("drawer").classList.add("open")};
+$("close").onclick=function(){$("drawer").classList.remove("open")};
+$("drawer").addEventListener("click",function(e){if(e.target===$("drawer"))$("drawer").classList.remove("open")});
+function wa(msg){window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(msg),"_blank")}
+$("send").onclick=function(){
+  if(!count()){alert("Please add items to your cart first.");return}
+  if(total()<MIN_ORDER){alert("Minimum order is "+inr(MIN_ORDER)+".");return}
+  var n=$("name").value.trim(),a=$("addr").value.trim();
+  if(!n||!a){alert("Please enter your name and address.");return}
+  var lines=PRODUCTS.filter(function(p){return cart[p.id]}).map(function(p){return "• "+p.n+" ("+p.w+") x "+cart[p.id]+" = "+inr(p.p*cart[p.id])});
+  wa("Hi! I'd like to order:\n"+lines.join("\n")+"\n\nTotal: "+inr(total())+"\nDelivery date: "+($("date").value||"Not selected")+"\nName: "+n+"\nAddress: "+a);
+};
+$("cform").addEventListener("submit",function(e){
+  e.preventDefault();
+  var v=function(i){return $(i).value.trim()};
+  wa("Hi! I'd like a custom cake:\n• Flavour: "+v("cf")+"\n• Weight: "+v("cw")+"\n• "+v("ce")+"\n• Shape: "+v("cs")+"\n• Date: "+v("cd")+"\n• Budget: "+(v("cb")?inr(v("cb")):"Flexible")+"\n• Message on cake: "+(v("cm")||"None")+"\n• Theme: "+(v("ct")||"None")+"\n• Area: "+(v("ca")||"-")+"\n\nName: "+v("cn")+"\nPhone: "+v("cp"));
+});
+$("wafloat").href="https://wa.me/"+WA+"?text="+encodeURIComponent("Hi! I want to know more about your cakes.");
+renderFilters();renderProducts();renderCart();
+</script>
+</body>
+</html>
